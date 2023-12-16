@@ -1,3 +1,30 @@
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+  /* або інший відступ між елементами */
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+  /* або інший колір тексту */
+  background-color: #f0f0f0;
+  /* або інший колір фону */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #ddd;
+}
+
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
@@ -44,4 +71,50 @@
 
 .simple-lightbox {
   background-color: #2E2F42CC;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.feedback-form button {
+  width: 95px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  gap: 10px;
+  background: #4E75FF;
+  color: #fff;
+  font-size: 16px;
+    border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.feedback-form button:hover {
+  background:  #6C8CFF;;
+  /* Колір при наведенні */
+}
+
+input,
+textarea {
+  padding: 8px;
+  font: inherit;
+}
+
+textarea {
+  resize: none;
 }
