@@ -1,12 +1,21 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
 .nav-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 15px;
+  margin: 15px;
 }
 
 .nav-item {
-  margin-bottom: 10px;
-  /* або інший відступ між елементами */
+  margin-bottom: 20px;
+
 }
 
 .nav-link {
@@ -14,15 +23,13 @@
   padding: 8px 16px;
   text-decoration: none;
   color: #333;
-  /* або інший колір тексту */
   background-color: #f0f0f0;
-  /* або інший колір фону */
-  border-radius: 4px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
-  background-color: #ddd;
+  background-color: rgb(129, 115, 115);
 }
 
 :root {
@@ -79,8 +86,14 @@
 
 .sl-close {
   color: #FFF !important;
-
 }
+
+.sl-navigation .sl-prev,
+.sl-navigation .sl-next {
+  
+ color: #FFF !important;
+}
+
 
 .feedback-form {
   display: flex;
@@ -98,6 +111,18 @@
   margin-bottom: 16px;
 }
 
+input,
+textarea {
+  padding: 8px;
+  font: inherit;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
 .feedback-form button {
   width: 95px;
   height: 40px;
@@ -107,33 +132,15 @@
   background: #4E75FF;
   color: #fff;
   font-size: 16px;
-    border: none;
+  border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
 }
 
 .feedback-form button:hover {
-  background:  #6C8CFF;;
-  
-}
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    text-align: left;
-  } 
-
-input,
-textarea {
-  padding: 8px;
-  font: inherit;
+  background:  #6C8CFF;; 
 }
 
-textarea {
-  resize: none;
-}
 
 

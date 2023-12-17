@@ -12,11 +12,15 @@ function saveFormDataToLocalStorage() {
     localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 }
 
-function loadFormDataFromLocalStorage() {
-    const formData = JSON.parse(localStorage.getItem('feedback-form-state')) || {};
-    emailInput.value = formData.email || '';
-    messageInput.value = formData.message || '';
-}
+  function loadFormDataFromLocalStorage() {
+        try {
+            const formData = JSON.parse(localStorage.getItem('feedback-form-state')) || {};
+            emailInput.value = formData.email || '';
+            messageInput.value = formData.message || '';
+        } catch (error) {
+            console.error('Помилка при завантаженні даних з локального сховища:', error);
+        }
+    }
 
 function handleSubmit(event) {
     event.preventDefault();
